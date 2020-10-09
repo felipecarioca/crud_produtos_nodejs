@@ -1,0 +1,88 @@
+============ PRODUTOS =============
+
+---- GET PRODUTOS ---- Lista todos os produtos
+
+GET http://localhost:3000/api/produtos
+
+---- POST PRODUTOS ---- Adiciona um novo produto
+
+POST http://localhost:3000/api/produtos
+
+{
+    "nome": "Palha Italiana de Brigadeiro",
+    "preco": 6.00
+}
+
+{
+    "nome": "Palha Italiana de Branquinho",
+    "preco": 6.00
+}
+
+{
+    "nome": "Palha Italiana de Nutella",
+    "preco": 6.00
+}
+
+{
+    "nome": "Palha Italiana de Óreo e Laka",
+    "preco": 6.00
+}
+
+---- PUT PRODUTOS ---- Altera o preço do produto
+
+PUT http://localhost:3000/api/produtos/{ID criado}
+
+{
+    "preco": 7.00
+}
+
+---- DELETE PRODUTOS ---- Deleta o produto
+
+DELETE http://localhost:3000/api/produtos/{ID criado}
+
+
+
+
+
+============ USUÁRIOS =============
+
+---- GET USUÁRIOS ---- Lista todos os usuarios
+
+GET http://localhost:3000/api/usuarios
+
+---- POST USUÁRIOS ---- Adiciona um novo usuário
+
+POST http://localhost:3000/api/usuarios
+
+{
+    "nome": "felipe",
+    "email": "felipe.lfpm@gmail.com"
+    "senha": 1234
+}
+
+{
+    "nome": "jady",
+    "email": "jadymaiaw@hotmail.com"
+    "senha": 12345
+}
+
+---- PUT USUÁRIOS ---- Altera o e-mail do usuário
+
+PUT http://localhost:3000/api/usuarios/{ID criado}
+
+{
+    "email": "2felipe.lfpm@gmail.com"
+}
+
+---- DELETE USUÁRIOS ---- Deleta o usuário
+
+DELETE http://localhost:3000/api/usuarios/{ID criado}
+
+---- AUTENTICAÇÃO DO USUÁRIO ----
+
+POST http://localhost:3000/api/usuarios
+
+{
+    "nome": "felipe",
+    "senha": 1234
+}
